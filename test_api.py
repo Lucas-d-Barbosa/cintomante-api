@@ -73,7 +73,7 @@ def verificar_servidor():
             return True
         else:
             return False
-    except:
+    except Exception:
         return False
 
 def main():
