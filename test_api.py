@@ -69,7 +69,10 @@ def verificar_servidor():
     """
     try:
         response = requests.get("http://localhost:8000/", timeout=5)
-        return True
+        if response.status_code == 200:
+            return True
+        else:
+            return False
     except:
         return False
 
