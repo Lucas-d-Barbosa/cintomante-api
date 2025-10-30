@@ -37,6 +37,7 @@ def preprocessar_imagem(imagem_file):
         numpy array: Imagem preprocessada pronta para predição
     """
     # Ler a imagem da memória
+    imagem_file.seek(0)
     img = Image.open(imagem_file)
     
     # Converter para RGB se necessário
