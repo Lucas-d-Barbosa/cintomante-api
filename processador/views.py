@@ -1,7 +1,5 @@
-import os
 import numpy as np
 from PIL import Image
-from io import BytesIO
 from pathlib import Path
 from rest_framework import status
 from rest_framework.views import APIView
@@ -39,13 +37,14 @@ def preprocessar_imagem(imagem_file):
         numpy array: Imagem preprocessada pronta para predição
     """
     # Ler a imagem da memória
+    imagem_file.seek(0)
     img = Image.open(imagem_file)
     
     # Converter para RGB se necessário
     if img.mode != 'RGB':
         img = img.convert('RGB')
     
-    # Redimensionar para o tamanho esperado pelo modelo (150x150)
+    # Redimensionar para o tamanho esperado pelo modelo: 150x150 pixels
     img = img.resize((150, 150))
     
     # Converter para array numpy

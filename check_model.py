@@ -1,6 +1,4 @@
 from tensorflow import keras
-import numpy as np
-
 # Carregar o modelo
 modelo = keras.models.load_model('modelos/modelo_cinto_otimizado.keras')
 
