@@ -45,7 +45,7 @@ def preprocessar_imagem(imagem_file):
     if img.mode != 'RGB':
         img = img.convert('RGB')
     
-    # Redimensionar para o tamanho esperado pelo modelo (150x150)
+    # Redimensionar para o tamanho esperado pelo modelo: 150x150 pixels
     img = img.resize((150, 150))
     
     # Converter para array numpy
