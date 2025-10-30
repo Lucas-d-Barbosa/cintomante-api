@@ -1,6 +1,5 @@
 import numpy as np
 from PIL import Image
-from io import BytesIO
 from pathlib import Path
 from rest_framework import status
 from rest_framework.views import APIView
