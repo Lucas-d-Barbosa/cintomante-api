@@ -8,6 +8,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     'https://lucas-d-barbosa.github.io/cintomante-web-app/',
+    'https://lucas-d-barbosa.github.io'
 ]
 
 
