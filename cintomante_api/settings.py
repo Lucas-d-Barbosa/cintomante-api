@@ -4,9 +4,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-t$!kmn40f#259++=l!duy6pjhyx77$o55k@x-_(g-jfq)m%tec'
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'https://lucas-d-barbosa.github.io/cintomante-web-app/',
+]
 
 
 
