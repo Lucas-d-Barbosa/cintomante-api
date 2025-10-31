@@ -26,8 +26,8 @@ INSTALLED_APPS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:5500",
-    "null"
+    'https://lucas-d-barbosa.github.io/cintomante-web-app/',
+    'https://lucas-d-barbosa.github.io'
 ]
 
 MIDDLEWARE = [
